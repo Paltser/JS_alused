@@ -1,36 +1,44 @@
-// data type
-// string
-let name = 'Markos Paltser'
-name = 'new name'
+let val
 
-let goodMark = 5
-console.log(goodMark)
-console.log(typeof goodMark)
+//number -> string
+val = String(555)
+val = String(4+4)
+val = String(5.8)
 
-let persent = 50.3
-console.log(persent)
-console.log(typeof persent)
+//bootean => stromg
 
-let isHere = true
-console.log(isHere)
-console.log(typeof isHere)
+val = String(true)
+val = String(false)
+
+// Object -> string
+val = String(new Date())
+
+//null ->
+val = String(null)
+
+val = String(1, 2, 3, 4, 5)
+
+//undefined -> string
+val = String(undefined)
+
+//tostring
+val = (true).toString()
+console.log(val)
+
+//string -> number
+val = Number(5)
+//bolean to -> number
+val = Number(true)
+val = Number(false)
+
+//null number
+val = Number(null)
+// string number
+val = Number('tere')
+//array number
+val = Number([1,2,3,4])
 
 
-const numbers = [1, 2, 3, 4, 5]
-console.log(numbers)
-console.log(typeof numbers)
-
-//null
-const airplane = null
-console.log(airplane)
-console.log(typeof airplane)
-
-//symbol
-const sym = Symbol()
-console.log(sym)
-console.log(typeof sym)
-
-//undefined
-let test
-console.log(test)
-console.log(typeof test)
+val = parseInt('100.3')
+val = parseFloat('100.30')
+console.log(val)
