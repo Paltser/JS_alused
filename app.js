@@ -1,24 +1,27 @@
-const firstname = 'Markos'
-const surname = 'Paltser'
-const email = 'Markos.Paltse@voco.ee'
-const department = 'IKT'
+const numbers1 = [43, 56, 33, 23, 44 , 36, 5]
+const  numbers2 = new Array(22, 45 ,33, 76, 54)
 
-let result = '<ul>' +
-    '<li><b>Name<b/> ' +firstname +'</li>' +
-    '<li>Surname'+ surname +'</li>' +
-    '<li>Email'+ email +'</li>' +
-    '<li>Department'+ department+'</li>' +
-    '<ul/>'
+let val
+val = numbers1.length
+val = numbers2.length
 
-result = `
-    <ul>
-        <li><b>Name: <b/>${firstname}</li>
-        <li><b>Surname: </b>${surname}</li>
-        <li>Email: ${email}</li>
-        <li>Department: ${department}</li>
+val = numbers1[3]
+val = numbers1.indexOf(36)
 
-    <ul/>`
+val = Array.isArray(numbers1)
 
+numbers1.push(250)
+numbers1.pop()
+numbers1.unshift(150)
+numbers1.shift()
 
-console.log(result)
-document.body.innerHTML = result
+const fruits = ['banana', 'apple', 'orange']
+val = fruits.sort()
+
+val = numbers1.concat(numbers2)
+numbers1.sort()
+
+val = numbers1.sort(function (x, y){
+    return y-x
+})
+console.log(val)
