@@ -1,44 +1,23 @@
-let val
+// matemaatika
+const num1 = 100
+const num2  =  50
 
-//number -> string
-val = String(555)
-val = String(4+4)
-val = String(5.8)
+let result
+result = num1 + num2
+result = num1 - num2
+result = num1 * num2
+result = num1 / num2
+result = num1 % num2
 
-//bootean => stromg
+result = Math.PI
+result = Math.round(2.5)
 
-val = String(true)
-val = String(false)
+result = Math.ceil(2.3)
+result = Math.floor(2.9)
+result = Math.sqrt(144)
+result = Math.abs(123)
+result = Math.pow(8, 2)
 
-// Object -> string
-val = String(new Date())
+result = Math.round(Math.random() * 11)
 
-//null ->
-val = String(null)
-
-val = String(1, 2, 3, 4, 5)
-
-//undefined -> string
-val = String(undefined)
-
-//tostring
-val = (true).toString()
-console.log(val)
-
-//string -> number
-val = Number(5)
-//bolean to -> number
-val = Number(true)
-val = Number(false)
-
-//null number
-val = Number(null)
-// string number
-val = Number('tere')
-//array number
-val = Number([1,2,3,4])
-
-
-val = parseInt('100.3')
-val = parseFloat('100.30')
-console.log(val)
+console.log(result)
