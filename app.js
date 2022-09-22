@@ -1,27 +1,37 @@
-const numbers1 = [43, 56, 33, 23, 44 , 36, 5]
-const  numbers2 = new Array(22, 45 ,33, 76, 54)
+//object
+
+const person = {
+    firstname : 'Kadi',
+    surname : 'Tamm',
+    age: 40,
+    email: 'kadi.tamm@gmail.com',
+    hobbies: ['tennis','korvpall'],
+    address : {
+        city: 'Voru',
+        country:'Vorumaa'
+    },
+    GetBirthYear: function (){
+        return 2022 - this.age
+    }
+}
 
 let val
-val = numbers1.length
-val = numbers2.length
+val = person
+val = person.firstname
+val = person['surname']
+val = person['hobbies'][1]
+val = person.hobbies[1]
+val = person.address.city
+val = person.address['city']
 
-val = numbers1[3]
-val = numbers1.indexOf(36)
+val = person.GetBirthYear()
+// console.log(val)
 
-val = Array.isArray(numbers1)
 
-numbers1.push(250)
-numbers1.pop()
-numbers1.unshift(150)
-numbers1.shift()
+for (let i = 0; i < person.hobbies.length; i++){
+    console.log(person.hobbies[1])
+}
 
-const fruits = ['banana', 'apple', 'orange']
-val = fruits.sort()
-
-val = numbers1.concat(numbers2)
-numbers1.sort()
-
-val = numbers1.sort(function (x, y){
-    return y-x
+person.hobbies.forEach((hobbie, index ) => {
+    console.log(hobbie + 'on elemint indeksiga ' + index)
 })
-console.log(val)
