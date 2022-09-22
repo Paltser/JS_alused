@@ -1,75 +1,38 @@
-/*
-if(conditional) {
-    // if statments
-} else {
-    //else statments
+console.log('for loop')
+for (let number = 0; number < 10; number++) {
+    if (number == 5){
+        // break
+        continue
+    }
+    console.log(number)
 }
 
-== equal     ->   ===
-!= not equal ->  !==
- */
+console.log('while')
 
-
-let personID;
-
-if (typeof personID !== 'indefined'){
-    console.log('id is not correct')
-} else {
-    console.log('id is ${personID}')
+let num = 0
+while (num < 10){
+    console.log(num)
+    num++
 }
 
-console.log(personID)
+console.log('dowhile')
+let num2 = 0
+do {
+    console.log(num2)
+    num2++
+}while (num2 < 10)
 
-/*
-if(conditional) {
-    // if statments
-} else if(conditional){
-    //if1 statments
-} else {
-    else statment
-}
- */
+const cars = ['audi', 'tesla', 'bmw']
+cars.forEach((car) => {
+    console.log(car)
+})
 
-// const color = 'green'
-//
-// if (color === 'red'){
-//     console.log('stop!')
-// } else if (color === 'yellow') {
-//     console.log('attention!')
-// } else if (color === 'green') {
-//         console.log('go!')
-// } else {
-//     console.log('error')
-// }
-
-const name = 'kadi'
-const age = 40
-
-if (age > 0 && age <= 12 ){
-    console.log('laps')
-}else if (age > 12 && age < 18){
-    console.log('teen')
-}else {
-    console.log('t2iskasvanud')
+const person = {
+    firstname : 'kadi',
+    surname : 'tamm',
+    age : 40,
 }
 
-let id = 15
-
-console.log(id === 100 ? 'ok' :'not ok' )
-
-
-//swithc
-const color = 'blue'
-switch (color) {
-    case "red":
-        console.log('stop')
-        break;
-    case "yellow":
-        console.log('attention')
-        break;
-    case "green":
-        console.log('go')
-        break;
-    default:
-        console.log('error')
+for (let personKey in person) {
+    console.log(person[personKey])
 }
