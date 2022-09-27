@@ -1,48 +1,32 @@
 let val;
 
+const list = document.querySelector('ul')
+const listitem = document.querySelector('li')
 
-val = document.getElementById('task')
+val = list
+val = list.childNodes
+val = list.childNodes[1]
+val = list.childNodes[1].nodeName
+val = list.childNodes[1].nodeType
 
-val = document.getElementById
-('task').id
-val = document.getElementById
-('task').className
+val = list.children
+val = list.children[1].children
 
-const taskTitle = document.getElementById('task-title')
+val = list.firstChild
+val = list.firstElementChild
 
-// stiilitd
-taskTitle.style.background = '#333'
-taskTitle.style.color = '#fff'
-taskTitle.style.padding = '5px'
-taskTitle.style.display = ''
+val = list.lastChild
+val = list.lastElementChild
 
-//content
-taskTitle.textContent = 'defined tasks'
-taskTitle.innerText = 'my fav text'
-taskTitle.innerHTML = `<b style="color: red">My Tasks</b'>`
+val = list.childElementCount
 
-val = document.querySelector('#task-title')
-val = document.querySelector('ul')
+val = listitem.parentNode
+val = listitem.parentElement
 
-val = document.querySelector('li')
+val = listitem.parentElement.parentElement
 
-val = document.querySelector('li')
+val =listitem.nextSibling
+val= listitem.nextElementSibling
+val = listitem.nextElementSibling.nextElementSibling.previousElementSibling
 
-// const task = document.querySelector('li')
-// task.style.color = 'green'
-
-// val = document.querySelector('li:last-child')
-// val = document.querySelector('li:nth-child(odd)').style.background = '#ccc'
-// val = document.querySelector('li:nth-child(even)').style.background = '#aaa'
-
-// multiple elements
-
-val = document.querySelectorAll('li')
-oddli = document.querySelectorAll('li:nth-child(odd)')
-
-oddli.forEach((li) =>{
-    li.style.background = '#ddd'
-})
-
-console.log(task)
 console.log(val)
