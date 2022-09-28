@@ -1,18 +1,28 @@
-const li = document.createElement('li')
+const form = document.querySelector('form')
+const taskinput = document.getElementById('task')
+const taskHeading = document.querySelector('#task-title')
 
-li.className = 'collection-item'
-// const text //document.createTextNode('Study element creation')
-// li.appendChild(text)
+form.addEventListener('submit', runevent)
 
-const a = document.createElement('a')
-a.className ='blue-text text-darken aligin right'
-const text = document.createTextNode('x')
-a.appendChild(text)
-a.setAttribute('href', '#')
+//taskinput.addEventListener('keydown', runevent)
+//taskinput.addEventListener('keyup', runevent)
+//taskinput.addEventListener('keypress', runevent)
 
-li.appendChild(a)
+//focus
+// taskinput.addEventListener("focus", runevent)
+// taskinput.addEventListener("blur", runevent)
 
-const list = document.querySelector('ul')
+//input
+// taskinput.addEventListener("paste", runevent)
+// taskinput.addEventListener("cut", runevent)
+// taskinput.addEventListener("input", runevent)
 
 
-console.log(a)
+
+
+function runevent(event){
+    console.log(`event type: ${event.type}`)
+    taskHeading.innerText = event.target.value
+    //event.preventDefault()
+}
+
